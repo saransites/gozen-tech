@@ -1,0 +1,30 @@
+1-find missing number
+Example input array: ([1, 2, 3, 4, 6, 7, 8]).
+
+Calculate the sum of integers from 1 to 8: [ {Sum} = {8 * 9}{2} = 36 ]
+Calculate the sum of the array elements: [ {Sum of array} = 1 + 2 + 3 + 4 + 6 + 7 + 8 = 31 ]
+Find the missing number: [ {Missing number} = {Sum} - {Sum of array} = 36 - 31 = 5 ]
+Therefore, the missing number in the given array is 5.
+
+2-Remove dublicates
+Initialize i = 0 and j = 1.
+Compare arr[j] (which is 1) with arr[i] (which is also 1). Since they are the same, move j to the next element.
+Now arr[j] is 2, which is different from arr[i]. Increment i to 1 and update arr[i] with 2.
+Move j to the next element (which is 2).
+Repeat the process until j reaches the end of the array.
+After completing the process, the modified array will be [1, 2, 3, 4, 5], and the new length without duplicates will be 5.
+
+3-Recursion
+function factorial(n):
+     factorial of 0 or 1 is 1
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+4-Reverse the array
+Let’s apply this approach to the example input array: [1, 2, 3, 4, 5, 6, 7] with k = 3:
+
+Reverse the entire array: [7, 6, 5, 4, 3, 2, 1].
+Reverse the first k elements (up to index k-1): [5, 6, 7, 4, 3, 2, 1].
+Reverse the remaining elements (from index k onwards): [5, 6, 7, 1, 2, 3, 4].
+The rotated array is [5, 6, 7, 1, 2, 3, 4].
